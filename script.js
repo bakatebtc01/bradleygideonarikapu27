@@ -69,3 +69,19 @@ if (downloadCsvButton) {
     URL.revokeObjectURL(link.href);
   });
 }
+
+function wireDemoForm(formId, statusId, message) {
+  const form = document.getElementById(formId);
+  const status = document.getElementById(statusId);
+  if (!form || !status) return;
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    status.textContent = message;
+    form.reset();
+  });
+}
+
+wireDemoForm('pledgeForm', 'pledgeStatus', 'Thank you. Your One Person, One Vote pledge has been recorded.');
+wireDemoForm('reportForm', 'reportStatus', 'Thank you. Your report has been submitted to the campaign tracker queue.');
+wireDemoForm('donationForm', 'donationStatus', 'Thank you. Receipt uploaded successfully for review.');
+wireDemoForm('contactForm', 'contactStatus', 'Thank you for contacting the campaign team. We will respond soon.');

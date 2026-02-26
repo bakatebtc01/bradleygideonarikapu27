@@ -121,6 +121,12 @@ section { margin: 1.2rem 0; background: var(--white); padding: 1rem; border-radi
 input, select, textarea, button { font: inherit; }
 input, select, textarea { width: 100%; padding: .55rem; border: 1px solid #ccd6ea; border-radius: 8px; }
 footer { text-align: center; padding: 1rem; color: #44526b; }
+.form-status {
+  margin-top: .6rem;
+  font-weight: 600;
+  color: var(--blue-deep);
+}
+
 .brand-link { color: #fff; }
 @media (max-width: 800px) {
   .hero { grid-template-columns: 1fr; }
