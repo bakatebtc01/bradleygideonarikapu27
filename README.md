@@ -24,3 +24,14 @@ Then open:
 - Countdown to 2027 writ period.
 - Expandable policy cards.
 - Volunteer sign-up capture with CSV export.
+
+
+## GitHub preview (GitHub Pages)
+
+This repo includes `.github/workflows/deploy-pages.yml` to publish the static website on GitHub Pages.
+
+### Steps
+1. Push this branch to your GitHub repository.
+2. In GitHub, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+3. Open the **Actions** tab and run **Deploy static site to GitHub Pages** (or push again).
+4. Your live preview URL will appear in the workflow output under `page_url`.
