@@ -25,7 +25,6 @@ Then open:
 - Expandable policy cards.
 - Volunteer sign-up capture with CSV export.
 
-
 ## GitHub preview (GitHub Pages)
 
 This repo includes `.github/workflows/deploy-pages.yml` to publish the static website on GitHub Pages.
@@ -35,3 +34,26 @@ This repo includes `.github/workflows/deploy-pages.yml` to publish the static we
 2. In GitHub, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
 3. Open the **Actions** tab and run **Deploy static site to GitHub Pages** (or push again).
 4. Your live preview URL will appear in the workflow output under `page_url`.
+
+## GitHub workspace setup (Codespaces)
+
+This repo now includes `.devcontainer/devcontainer.json` so you can create a ready-to-use GitHub workspace.
+
+### 1) Connect this project to your GitHub repo
+```bash
+git branch -M main
+git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO>.git
+git push -u origin main
+```
+
+### 2) Create the workspace in GitHub
+1. Open your repository on GitHub.
+2. Click **Code → Codespaces → Create codespace on main**.
+3. Wait for the workspace to build with the included devcontainer.
+
+### 3) Preview inside Codespaces
+In the Codespaces terminal:
+```bash
+python3 -m http.server 8000
+```
+Then open the forwarded **Static Site Preview** port.
