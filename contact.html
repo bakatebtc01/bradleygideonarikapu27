@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Arikapu 2027</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header compact">
+    <a href="index.html" class="brand-link">← Home</a>
+    <h1>Contact</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Send a Message</h2>
+      <form id="contactForm" class="card-form">
+        <label>Name<input type="text" name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button class="button" type="submit">Send Message</button>
+      </form>
+      <p id="contactStatus" class="form-status"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

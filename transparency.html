@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transparency Hub | Arikapu 2027</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header compact"><a href="index.html" class="brand-link">← Home</a><h1>Transparency Hub</h1></header>
+  <main>
+    <section>
+      <h2>Public Reporting Forum</h2>
+      <form id="reportForm" class="card-form">
+        <label>Issue Type
+          <select><option>Road Damage</option><option>School Supply Shortage</option><option>Aid Post Issue</option></select>
+        </label>
+        <label>Location<input type="text" required></label>
+        <label>Details<textarea rows="4" required></textarea></label>
+        <button class="button" type="submit">Submit Report</button>
+      </form>
+      <p id="reportStatus" class="form-status"></p>
+    </section>
+    <section>
+      <h2>Policy Tracker</h2>
+      <div class="tracker-item"><p>Biometric Governance Framework</p><progress value="35" max="100"></progress></div>
+      <div class="tracker-item"><p>Feeder Roads Prioritization</p><progress value="52" max="100"></progress></div>
+      <div class="tracker-item"><p>Rural Health Logistics Plan</p><progress value="47" max="100"></progress></div>
+    </section>
+    <section>
+      <h2>Campaign Financial Updates</h2>
+      <p>All campaign funds and expenditures will be regularly published for public review.</p>
+    </section>
+
+    <section>
+      <h2>Transparency Sections</h2>
+      <ul>
+        <li><a href="public-reporting-forum.html">Public Reporting Forum</a></li>
+        <li><a href="campaign-financial-updates.html">Campaign Financial Updates</a></li>
+        <li><a href="policy-tracker.html">Policy Tracker</a></li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

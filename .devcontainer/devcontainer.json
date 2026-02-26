@@ -1,0 +1,24 @@
+{
+  "name": "Bradley Arikapu 2027 Website Workspace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Static Site Preview",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "python3 --version && node --version && npm --version",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "liveServer.settings.port": 8000,
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  }
+}
